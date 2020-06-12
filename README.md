@@ -255,18 +255,18 @@ end
 Let's implement this code in our `#get_married` method:
 
 ```ruby
-def get_married(person)
+  def get_married(person)
     self.partner = person
     if person.class != Person
       begin
-        raise PartnerError
+      raise PartnerError
       rescue PartnerError => error
-          puts error.message
-      end
+      puts error.message
+  end
     else
       person.partner = self
     end
-end
+  end
 ```
 
 If the object passed into the method as an argument *is not* an instance of the
