@@ -1,0 +1,4 @@
+class DataTypeError < StandardError
+
+
+end
